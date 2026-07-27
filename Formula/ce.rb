@@ -6,7 +6,7 @@
 class Ce < Formula
   desc "Peer-to-peer compute mesh and economy"
   homepage "https://github.com/ce-net/ce"
-  version "0.1.32"
+  version "0.1.33"
   license "MIT"
 
   on_macos do
