@@ -6,13 +6,13 @@
 class Ce < Formula
   desc "Peer-to-peer compute mesh and economy"
   homepage "https://github.com/ce-net/ce"
-  version "0.1.34"
+  version "0.1.35"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ce-net/ce/releases/download/v#{version}/ce-macos-arm64.tar.gz"
-      sha256 "3805aef9be39f3f9658ef6378f780f54fef5972965e81f85d63bba2a3c4de2e8"
+      sha256 "57cebc8fdeaea5b15f9de31bf55c40b146c0525908286ad1524e0276c3c1063c"
     else
       odie "ce ships no Intel-Mac binary. Build from source (cargo build --release) or run: curl -sSL https://ce-net.com/install.sh | bash"
     end
@@ -21,10 +21,10 @@ class Ce < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ce-net/ce/releases/download/v#{version}/ce-linux-arm64.tar.gz"
-      sha256 "c840779116a62886e4ea765f2826c58ab9e49db74a07c4cecc4869cd2468cef9"
+      sha256 "87e05c5f050cec78ed3ed1234b677563edcd56d7024a3dca9115268562c3a034"
     else
       url "https://github.com/ce-net/ce/releases/download/v#{version}/ce-linux-amd64.tar.gz"
-      sha256 "43329c84120b45be4745627682a487df3806e08af99075c6cd8f76d1d5f9cb76"
+      sha256 "10042f1aa672ea7849282cbc32f08d06c5309a4833ece0c2df60bd799cb0923c"
     end
   end
 
